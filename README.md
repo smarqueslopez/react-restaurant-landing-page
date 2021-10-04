@@ -1,5 +1,7 @@
 # react-restaurant-web 🍕
 
+Complete Responsive Food / Restaurant Website Design
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
