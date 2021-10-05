@@ -1,26 +1,37 @@
 import classNames from 'classnames'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import menuItems from '@/utils/menuItems'
 import styles from '@/styles/components/Header.module.scss'
 
 function Header() {
-  const [toggle, setToggle] = useState(false)
+  const [toggleMenu, setToggleMenu] = useState(false)
 
-  const onMenuClick = (e) => {
-    setToggle(!toggle)
+  useEffect(() => {
+    window.onscroll = () => {
+      const menuIcon = document.querySelector('#menu-bars')
+      menuIcon.classList.add('fa-bars')
+      menuIcon.classList.remove('fa-times')
+      setToggleMenu(false)
+    }
+  }, [])
+
+  const onMenuClick = () => {
+    setToggleMenu(!toggleMenu)
     const menuIcon = document.querySelector('#menu-bars')
-    menuIcon.classList.toggle('fa-bars', toggle)
-    menuIcon.classList.toggle('fa-times', !toggle)
+    menuIcon.classList.toggle('fa-bars', toggleMenu)
+    menuIcon.classList.toggle('fa-times', !toggleMenu)
   }
 
   return (
     <header className={styles.header}>
       <a href='#' className={styles.header__logo}>
-        <span className='fas fa-utensils'></span>resto.
+        <span className='fas fa-utensils' />
+        resto.
       </a>
       <nav
+        id='nav'
         className={classNames(styles.header__nav, {
-          [styles['show-menu']]: toggle
+          [styles['show-menu']]: toggleMenu
         })}
       >
         {menuItems.map((item) => {
@@ -28,12 +39,10 @@ function Header() {
             <a
               key={item.id}
               href={item.href}
-              className={classNames(
-                styles['header__nav-link'],
-                {
-                  [styles['active-link']]: item.active
-                }
-              )}
+              className={classNames(styles['header__nav-link'], {
+                [styles['active-link']]: item.active
+              })}
+              onClick={onMenuClick}
             >
               {item.name}
             </a>
