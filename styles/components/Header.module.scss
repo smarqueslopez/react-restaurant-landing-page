@@ -1,2 +1,105 @@
 .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+
+  &__logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+
+    span {
+      color: var(--green);
+    }
+  }
+
+  &__nav {
+    &-link {
+      font-size: 1.7rem;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1.5rem;
+      color: var(--light-color);
+      transition: var(--transition);
+
+      &:hover,
+      &.active-link {
+        color: var(--white);
+        background-color: var(--green);
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 5px;
+
+    span {
+      width: 4.5rem;
+      height: 4.5rem;
+      font-size: 1.7rem;
+      text-align: center;
+      line-height: 4.5rem;
+      cursor: pointer;
+      border-radius: 50%;
+      color: var(--black);
+      background: var(--grey);
+      transition: var(--transition);
+
+      &.menu {
+        display: none;
+      }
+
+      &:hover {
+        color: var(--white);
+        background: var(--green);
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__nav {
+      padding: 1rem;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-top: 0.1rem solid rgba(var(--black), 0.2);
+      border-bottom: 0.1rem solid rgba(var(--black), 0.2);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.show-menu {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      &-link {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--grey);
+      }
+    }
+
+    &__icons {
+      span {
+        &.menu {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 1rem 2rem;
+  }
 }
