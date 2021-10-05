@@ -1,3 +1,4 @@
+import SearchForm from './SearchForm'
 import classNames from 'classnames'
 import { useEffect, useState } from 'react'
 import menuItems from '@/utils/menuItems'
@@ -5,6 +6,7 @@ import styles from '@/styles/components/Header.module.scss'
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false)
+  const [toggleSearch, setToggleSearch] = useState(false)
 
   useEffect(() => {
     window.onscroll = () => {
@@ -58,10 +60,15 @@ function Header() {
         <span
           id='search-icon'
           className={classNames('fas fa-search', styles.search)}
+          onClick={() => setToggleSearch(true)}
         />
         <span className='fas fa-heart' />
         <span className='fas fa-shopping-cart' />
       </div>
+      <SearchForm
+        active={toggleSearch}
+        onClose={() => setToggleSearch(false)}
+      />
     </header>
   )
 }
