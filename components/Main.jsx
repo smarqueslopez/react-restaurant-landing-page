@@ -1,7 +1,7 @@
 import styles from '@/styles/components/Main.module.scss'
 
 function Main() {
-  return <Main className={styles.main}></Main>
+  return <main className={styles.main}></main>
 }
 
 export default Main
