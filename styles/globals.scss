@@ -34,3 +34,11 @@ html {
     font-size: 50%;
   }
 }
+
+section {
+  padding: 2rem;
+
+  &:nth-child(even) {
+    background-color: var(--grey);
+  }
+}
