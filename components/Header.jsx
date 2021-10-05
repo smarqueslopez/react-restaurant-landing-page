@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import { useState } from 'react'
+import menuItems from '@/utils/menuItems'
 import styles from '@/styles/components/Header.module.scss'
 
 function Header() {
@@ -22,30 +23,22 @@ function Header() {
           [styles['show-menu']]: toggle
         })}
       >
-        <a
-          href='#home'
-          className={classNames(
-            styles['header__nav-link'],
-            styles['active-link']
-          )}
-        >
-          home
-        </a>
-        <a href='#dishes' className={styles['header__nav-link']}>
-          dishes
-        </a>
-        <a href='#about' className={styles['header__nav-link']}>
-          about
-        </a>
-        <a href='#menu' className={styles['header__nav-link']}>
-          menu
-        </a>
-        <a href='#reviews' className={styles['header__nav-link']}>
-          reviews
-        </a>
-        <a href='#order' className={styles['header__nav-link']}>
-          order
-        </a>
+        {menuItems.map((item) => {
+          return (
+            <a
+              key={item.id}
+              href={item.href}
+              className={classNames(
+                styles['header__nav-link'],
+                {
+                  [styles['active-link']]: item.active
+                }
+              )}
+            >
+              {item.name}
+            </a>
+          )
+        })}
       </nav>
       <div className={styles.header__icons}>
         <span
