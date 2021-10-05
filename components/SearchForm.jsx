@@ -11,7 +11,7 @@ function SearchForm({ active, onClose }) {
       <input
         className={styles['form__search-box']}
         type='search'
-        placeholder='search here...'
+        placeholder='Search here...'
         name=''
         id='search-box'
       />
