@@ -64,6 +64,23 @@ section {
   }
 }
 
+.heading {
+  text-align: center;
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.sub-heading {
+  text-align: center;
+  color: var(--green);
+  font-size: 2rem;
+  padding-top: 1rem;
+  transition: var(--transition);
+}
+
 .swiper {
   width: 100%;
   max-width: 1200px;
