@@ -66,23 +66,6 @@
     transition: var(--transition);
   }
 
-  &__button {
-    margin-top: 1rem;
-    display: inline-block;
-    font-size: 1.7rem;
-    color: var(--white);
-    background: var(--black);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    padding: 0.8rem 0.5rem;
-    transition: var(--transition);
-
-    &:hover {
-      background: var(--green);
-      letter-spacing: 0.1rem;
-    }
-  }
-
   @media screen and (max-width: 991px) {
     &__image {
       width: 100%;

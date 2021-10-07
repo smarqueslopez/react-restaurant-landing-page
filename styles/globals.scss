@@ -47,6 +47,23 @@ section {
   }
 }
 
+.button {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: var(--white);
+  background: var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.8rem 0.5rem;
+  transition: var(--transition);
+
+  &:hover {
+    background: var(--green);
+    letter-spacing: 0.1rem;
+  }
+}
+
 .swiper {
   width: 100%;
   max-width: 1200px;

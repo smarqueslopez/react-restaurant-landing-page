@@ -17,7 +17,7 @@ function Dish({ title, img, rating, price }) {
       <h3 className={styles.dish__title}>{title}</h3>
       <Stars value={rating} />
       <span className={styles.dish__price}>{`$${price}`}</span>
-      <a href='#' className={styles.dish__button}>
+      <a href='#' className='button'>
         add to cart
       </a>
     </div>

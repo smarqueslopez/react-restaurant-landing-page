@@ -7,7 +7,7 @@ function Slide({ title, subtitle, description, img }) {
         <span className={styles.slide__subtitle}>{subtitle}</span>
         <h3 className={styles.slide__title}>{title}</h3>
         <p className={styles.slide__description}>{description}</p>
-        <a href='#' className={styles.slide__button}>
+        <a href='#' className='button'>
           order now
         </a>
       </div>
