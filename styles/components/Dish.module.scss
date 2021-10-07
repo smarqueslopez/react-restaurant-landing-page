@@ -1,0 +1,92 @@
+.dish {
+  $dish: &;
+  padding: 2.5rem;
+  background: var(--white);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  transition: var(--transition);
+
+  &__favorite,
+  &__detail {
+    position: absolute;
+    top: 1.5rem;
+    background: var(--grey);
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--white);
+      background: var(--green);
+    }
+  }
+
+  &__favorite {
+    right: -15rem;
+  }
+  &__detail {
+    left: -15rem;
+  }
+
+  &:hover {
+    #{$dish}__favorite {
+      right: 1.5rem;
+    }
+
+    #{$dish}__detail {
+      left: 1.5rem;
+    }
+  }
+
+  &__image {
+    height: 17rem;
+    margin: 1rem 0;
+    transition: var(--transition);
+  }
+
+  &__title {
+    color: var(--black);
+    font-size: 2.5rem;
+    transition: var(--transition);
+  }
+
+  &__price {
+    color: var(--green);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    transition: var(--transition);
+  }
+
+  &__button {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: var(--white);
+    background: var(--black);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.8rem 0.5rem;
+    transition: var(--transition);
+
+    &:hover {
+      background: var(--green);
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

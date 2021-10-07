@@ -1,0 +1,19 @@
+.star-rating {
+  padding: 1rem 0;
+  transition: var(--transition);
+
+  input[type='radio'] {
+    display: none;
+  }
+
+  .star {
+    font-size: 1.7rem;
+    color: var(--grey);
+    cursor: pointer;
+    transition: var(--transition);
+
+    &.marked {
+      color: var(--green);
+    }
+  }
+}

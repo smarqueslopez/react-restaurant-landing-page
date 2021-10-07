@@ -1,0 +1,27 @@
+.dishes {
+  transition: var(--transition);
+
+  &__sub-heading {
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+    transition: var(--transition);
+  }
+
+  &__heading {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    transition: var(--transition);
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+    transition: var(--transition);
+  }
+}
