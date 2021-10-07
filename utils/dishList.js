@@ -1,9 +1,11 @@
-const dishes = [
+const dishList = [
   {
     id: 1,
     title: 'hamburger',
     img: 'images/dish-1.png',
     rating: '4.5',
+    detailed: true,
+    favorited: true,
     price: '15.99'
   },
   {
@@ -11,6 +13,8 @@ const dishes = [
     title: 'Chicken nuggets',
     img: 'images/dish-2.png',
     rating: '4.5',
+    detailed: true,
+    favorited: true,
     price: '15.99'
   },
   {
@@ -18,6 +22,8 @@ const dishes = [
     title: 'Fried chicken',
     img: 'images/dish-3.png',
     rating: '4.5',
+    detailed: true,
+    favorited: true,
     price: '15.99'
   },
   {
@@ -25,6 +31,8 @@ const dishes = [
     title: 'Hot pizza',
     img: 'images/dish-4.png',
     rating: '4.5',
+    detailed: true,
+    favorited: true,
     price: '15.99'
   },
   {
@@ -32,6 +40,8 @@ const dishes = [
     title: 'ice cream cookies',
     img: 'images/dish-5.png',
     rating: '4.5',
+    detailed: true,
+    favorited: true,
     price: '15.99'
   },
   {
@@ -39,8 +49,10 @@ const dishes = [
     title: 'chicken drums',
     img: 'images/dish-6.png',
     rating: '4.5',
+    detailed: true,
+    favorited: true,
     price: '15.99'
   }
 ]
 
-export default dishes
+export default dishList
