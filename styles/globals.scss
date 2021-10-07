@@ -41,4 +41,17 @@ section {
   &:nth-child(even) {
     background-color: var(--grey);
   }
+
+  @media screen and (max-width: 991px) {
+    padding: 2rem;
+  }
+}
+
+.swiper {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--green);
 }
