@@ -4,7 +4,7 @@ import styles from '@/styles/components/SpecialDishes.module.scss'
 
 function SpecialDishes() {
   return (
-    <section className={styles.home} id='special-dishes'>
+    <section className={styles.home} id='home'>
       <Slider items={specialDishes} />
     </section>
   )
