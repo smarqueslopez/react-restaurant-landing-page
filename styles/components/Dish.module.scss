@@ -58,6 +58,13 @@
     transition: var(--transition);
   }
 
+  &__description {
+    color: var(--light-color);
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+  }
+
   &__price {
     color: var(--green);
     font-weight: bolder;
