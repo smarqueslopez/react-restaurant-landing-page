@@ -5,11 +5,12 @@ import style from '@/styles/components/ScrollUp.module.scss'
 function ScrollUp() {
   useEffect(() => {
     const scrollUp = document.getElementById('scroll-up')
-    window.onscroll = () => {
-      window.scrollY >= 200
-        ? scrollUp.classList.add(style['scroll-up--show'])
-        : scrollUp.classList.remove(style['scroll-up--show'])
-    }
+    window.addEventListener('scroll', () => {
+        window.scrollY >= 200
+          ? scrollUp.classList.add(style['scroll-up--show'])
+          : scrollUp.classList.remove(style['scroll-up--show'])
+      }
+    )
   }, [])
 
   return (

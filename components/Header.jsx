@@ -9,13 +9,17 @@ function Header() {
   const [toggleSearch, setToggleSearch] = useState(false)
 
   useEffect(() => {
-    const menuIcon = document.querySelector('#menu-bars')
-    const sectionList = document.querySelectorAll('section')
-
-    window.onscroll = () => {
+    window.addEventListener('scroll', () => {
+      const menuIcon = document.querySelector('#menu-bars')
       menuIcon.classList.add('fa-bars')
       menuIcon.classList.remove('fa-times')
       setToggleMenu(false)
+    })
+  }, [])
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      const sectionList = document.querySelectorAll('section')
       sectionList.forEach((section) => {
         const id = section.getAttribute('id')
         const menuItem = document.querySelector(`header nav a[href="#${id}"]`)
@@ -33,7 +37,7 @@ function Header() {
           }
         }
       })
-    }
+    })
   }, [])
 
   const onMenuClick = () => {
