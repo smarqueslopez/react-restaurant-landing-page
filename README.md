@@ -1,4 +1,4 @@
-# react-restaurant-landing page 🍕
+# react-restaurant-landing-page 🍕
 
 Complete Responsive Food / Restaurant Landing page Design
 
