@@ -11,7 +11,7 @@ function Header() {
   useEffect(() => {
     const menuIcon = document.querySelector('#menu-bars')
     const sectionList = document.querySelectorAll('section')
-    const navLinkList = document.querySelectorAll('header nav a')
+
     window.onscroll = () => {
       menuIcon.classList.add('fa-bars')
       menuIcon.classList.remove('fa-times')
