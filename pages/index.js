@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 import Main from '@/components/Main'
 import Footer from '@/components/Footer'
 import Loader from '@/components/Loader'
+import ScrollUp from '@/components/ScrollUp'
 import styles from '@/styles/pages/Home.module.scss'
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Main />
       <Footer />
       <Loader />
+      <ScrollUp />
     </div>
   )
 }
