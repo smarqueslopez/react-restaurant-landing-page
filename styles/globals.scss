@@ -30,7 +30,11 @@ html {
   scroll-behavior: smooth;
   font-family: 'Nunito', sans-serif;
 
-  @media (max-width: 991px) {
+  @media screen and (max-width: 991px) {
+    font-size: 55%;
+  }
+
+  @media screen and (max-width: 450 px) {
     font-size: 50%;
   }
 }

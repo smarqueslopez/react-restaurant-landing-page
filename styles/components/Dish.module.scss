@@ -73,7 +73,7 @@
     transition: var(--transition);
   }
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 450px) {
     &__image {
       width: 100%;
       height: auto;
