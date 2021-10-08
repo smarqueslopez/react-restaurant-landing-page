@@ -6,7 +6,7 @@ function Loader() {
     window.onload = () =>
       setInterval(() => {
         document
-          .querySelector([styles.loader])
+          .querySelector(`.${styles.loader}`)
           .classList.add(styles['fade-out'])
       }, 3000)
   }, [])

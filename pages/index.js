@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Header from '@/components/Header'
 import Main from '@/components/Main'
 import Footer from '@/components/Footer'
+import Loader from '@/components/Loader'
 import styles from '@/styles/pages/Home.module.scss'
-import Loader from '@/components/loader'
 
 export default function Home() {
   return (
