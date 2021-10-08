@@ -78,7 +78,7 @@ function Footer() {
         </div>
       </div>
       <div className={styles.footer__credit}>
-        copyright @ 2021 by{' '}
+        Copyright @ 2021 by{' '}
         <a
           target='_blank'
           rel='noreferrer'
