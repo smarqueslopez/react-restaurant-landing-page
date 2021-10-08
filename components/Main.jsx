@@ -3,6 +3,7 @@ import Dishes from './Dishes'
 import About from './About'
 import Menu from './Menu'
 import Reviews from './Reviews'
+import Order from './Order'
 import styles from '@/styles/components/Main.module.scss'
 
 function Main() {
@@ -13,6 +14,7 @@ function Main() {
       <About />
       <Menu />
       <Reviews />
+      <Order />
     </main>
   )
 }

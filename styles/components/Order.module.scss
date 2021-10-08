@@ -1,0 +1,63 @@
+.order {
+  .form {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: var(--white);
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: var(--transition);
+
+    .form__item {
+      width: 49%;
+      transition: var(--transition);
+
+      .label {
+        padding: 0.5rem 0;
+        display: block;
+        font-size: 1.5rem;
+        color: var(--light-color);
+        transition: var(--transition);
+      }
+
+      .input {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background: var(--grey);
+        font-size: 1.6rem;
+        color: var(--black);
+        border-radius: 0.5rem;
+        text-transform: none;
+        border: 0.1rem solid transparent;
+        transition: var(--transition);
+
+        &:focus {
+          border: 0.1rem solid var(--green);
+        }
+      }
+
+      textarea.input {
+        height: 20rem;
+        resize: none;
+        transition: var(--transition);
+      }
+
+      .button {
+        margin-top: 0;
+      }
+
+      @media screen and (max-width: 450px) {
+        width: 100%;
+      }
+    }
+  }
+}
