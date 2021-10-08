@@ -14,7 +14,7 @@ This landing web was created by "mobile first" strategy.
 
 ## Deployed on [Vercel](https://www.vercel.com/)
 
-You can view a live demo [here](https://react-restaurant-web.vercel.app/).
+You can view a live demo [here](https://react-restaurant-landing-page.vercel.app/).
 
 ## Links
 - Icons https://fontawesome.com/
