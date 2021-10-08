@@ -1,0 +1,47 @@
+.review {
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  position: relative;
+  transition: var(--transition);
+
+  &__quote {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 6rem;
+    color: var(--grey);
+    transition: var(--transition);
+  }
+
+  &__user {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    transition: var(--transition);
+  }
+
+  &__img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+
+  &__title {
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    transition: var(--transition);
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    transition: var(--transition);
+  }
+}
