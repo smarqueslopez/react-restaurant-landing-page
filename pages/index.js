@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 import Main from '@/components/Main'
 import Footer from '@/components/Footer'
 import styles from '@/styles/pages/Home.module.scss'
+import Loader from '@/components/loader'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <Main />
       <Footer />
+      <Loader />
     </div>
   )
 }
