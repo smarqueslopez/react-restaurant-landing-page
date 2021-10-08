@@ -1,2 +1,56 @@
 .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 7%;
+  background: var(--white);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    transition: var(--transition);
+  }
+
+  &__column {
+    transition: var(--transition);
+    .title {
+      padding: 0.5rem 0;
+      font-size: 2.5rem;
+      color: var(--black);
+      transition: var(--transition);
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    transition: var(--transition);
+    &:hover {
+      color: var(--green);
+      text-decoration: underline;
+    }
+  }
+
+  &__credit {
+    text-align: center;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    color: var(--black);
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    transition: var(--transition);
+
+    a {
+      color: var(--green);
+      transition: var(--transition);
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 1rem 2rem;
+  }
 }
